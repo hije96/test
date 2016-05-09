@@ -4,8 +4,9 @@ Rails.application.routes.draw do
   post '/write'=>'home#write'
   get '/list'=>'home#list'
   get "destroy/:post_id"=>"home#destroy"
-  get "update_view/:post_id"=>"home#update_view"
+  get "/update_view/:post_id"=>"home#update_view"
   post "renew/:post_id"=>"home#renew"
+  get "/reply/:post_id"=>"home#reply"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

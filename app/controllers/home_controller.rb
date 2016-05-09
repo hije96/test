@@ -39,4 +39,8 @@ class HomeController < ApplicationController
         
         redirect_to "/list"
     end
+    
+    def reply
+       @one_post=Post.find(params[:post_id]) 
+    end
 end
